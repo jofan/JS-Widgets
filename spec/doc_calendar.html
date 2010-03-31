@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="support/jspec.css" />
+		<script src="support/jspec.js"></script>
+		<script src="support/jspec.xhr.js"></script>
+		<script src="support/jquery-1.4.2.js"></script>
+		<script src="support/jspec.jquery.js"></script>
+		<script src="../lib/core.js"></script>
+		<script src="../lib/calendar.js"></script>
+		<script src="unit/spec.helper.js"></script>
+		<script>
+			function runSuites() {
+				JSpec
+				.exec('unit/spec_calendar.js')
+				.run({ fixturePath: 'fixtures' })
+				.report()
+			}
+		</script>
+	</head>
+	<body class="jspec" onLoad="runSuites();">
+		<div id="jspec-top"><h2 id="jspec-title">JSpec <em><script>document.write(JSpec.version)</script></em></h2></div>
+		<div id="jspec"></div>
+		<div id="jspec-bottom"></div>
+	</body>
+</html>
