@@ -2,27 +2,36 @@ body.jspec {
   margin: 45px 0;
   font: 12px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
   background: #efefef url(images/bg.png) top left repeat-x;
-  text-align: center;
 }
-#jspec {
-  margin: 0 auto;
-  padding-top: 30px;
+h1 {
+	color:#aaa;
+	font-size:24px;
+	padding:20px 40px;
+}
+h2 {
+	font-size: 20px;
+	margin:0;
+}
+.doc {
+  margin: -15px auto 0 auto;
   width: 1008px;
   background: url(images/vr.png) top left repeat-y;
-  text-align: left;
 }
-#jspec-top {
+.doc-top {
   position: relative;
   margin: 0 auto;
   width: 1008px;
-  height: 40px;
+  height: 70px;
   background: url(images/sprites.bg.png) top left no-repeat;
 }
-#jspec-bottom {
-  margin: 0 auto;
+.doc-btm {
+  color:#666;
+	margin: 0 auto;
   width: 1008px;
-  height: 15px;
+  height: 30px;
+  padding-top:10px;
   background: url(images/sprites.bg.png) bottom left no-repeat;
+  text-align:center;
 }
 #jspec .loading {
   margin-top: -45px;
@@ -30,15 +39,16 @@ body.jspec {
   height: 80px;
   background: url(images/loading.gif) 50% 50% no-repeat;
 }
-#jspec-title {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  width: 160px;
-  font-size: 22px;
+.header {
   font-weight: normal;
-  background: url(images/sprites.png) 0 -126px no-repeat;
-  text-align: center;
+  /*background: url(images/sprites.png) 0 -126px no-repeat;*/
+  margin-top:15px;
+  padding:0 40px;
+}
+.body {
+	padding:0 40px 10px 40px;
+	border-bottom:1px solid #ddd;
+	/*display:none;*/
 }
 #jspec-title em {
   font-size: 10px;
@@ -63,7 +73,9 @@ body.jspec {
   display: none;
 }
 #jspec-report .heading {
-  margin-bottom: 15px;
+  margin-left:180px;
+	margin-top:-30px;
+	position:absolute;
 }
 #jspec-report .heading span {
   padding-right: 10px;
@@ -79,7 +91,7 @@ body.jspec {
   border-collapse: collapse;
 }
 #jspec-report td {
-  padding: 8px;
+  padding: 4px;
   text-indent: 30px;
   color: #7B8D9B;
 }
@@ -88,7 +100,8 @@ body.jspec {
 }
 #jspec-report tr.body pre {
   margin: 0;
-  padding: 0 0 5px 25px;
+  margin-top:-10px;
+  padding: 0 0 10px 15px;
 }
 #jspec-report tr.even:hover + tr.body, 
 #jspec-report tr.odd:hover + tr.body {
@@ -111,19 +124,19 @@ body.jspec {
   width: 15px;
 }
 #jspec-report td.pass {
-  background: url(images/sprites.png) 3px -7px no-repeat;
+  background: url(images/sprites.png) 3px -11px no-repeat;
 }
 #jspec-report td.fail {
-  background: url(images/sprites.png) 3px -158px no-repeat;
+  background: url(images/sprites.png) 3px -162px no-repeat;
   font-weight: bold;
   color: #FC0D0D;
 }
 #jspec-report td.requires-implementation {
-  background: url(images/sprites.png) 3px -333px no-repeat;
+  background: url(images/sprites.png) 3px -337px no-repeat;
 }
 #jspec-report tr.description td {
-  margin-top: 25px;
-  padding-top: 25px;
+  margin-top: 15px;
+  padding-top: 15px;
   font-size: 12px;
   font-weight: bold;
   text-indent: 0;
