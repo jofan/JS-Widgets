@@ -52,14 +52,16 @@ describe 'App.widget.Calendar'
   
   describe '.show()'
     it 'should display calendar'
-      Cal.show()
+      var input = $('#dateField1')
+      Cal.show(input)
       Cal.calendar.should.be_visible
     end
   end
   
   describe '.hide()'
     it 'should hide the calendar'
-      Cal.show()
+      var input = $('#dateField1')
+      Cal.show(input)
       Cal.hide()
       Cal.calendar.should.be_hidden
     end
