@@ -1,0 +1,61 @@
+﻿<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="support/jspec.css" />
+		<link type="text/css" rel="stylesheet" href="../lib/timeout.css" />
+		<script src="support/jspec.js"></script>
+		<script src="support/jspec.xhr.js"></script>
+		<script src="support/jquery-1.4.2.js"></script>
+		<script src="support/jspec.jquery.js"></script>
+		<script src="../lib/core.js"></script>
+		<script src="../lib/timeout.js"></script>
+		<script src="unit/spec.helper.js"></script>
+		<script>
+			function runSuites() {
+				JSpec
+				.exec('unit/spec_timeout.js')
+				.run({ fixturePath: 'fixtures' })
+				.report()
+			}
+		</script>
+	</head>
+	<body class="jspec" onLoad="runSuites();">
+		<div class="doc-top">
+			<h1>Widget: Timeout</h1>
+		</div>
+		<div class="doc">
+			<div class="header">
+				<h2>Description</h2>
+			</div>
+			<div class="body">
+				<p>	
+					A timeout widget that display an overlay with a countdown. Good when using sessions.
+				</p>
+			</div>
+			<div class="header">
+				<h2>Code</h2>
+			</div>
+			<div class="body">
+				<p>	
+					<em>Coming once done...</em>
+				</p>
+			</div>
+			<div class="header">
+				<h2>Demo/Fixture</h2>
+			</div>
+			<div class="body">
+				<p>	
+					Sample text. Overlay will display above this.
+				</p>
+			</div>
+			<div id="jspec-top" class="header">
+		    <h2 id="jspec-title">JSpec <em><script>document.write(JSpec.version)</script></em></h2>
+	    </div>
+		  <div class="body">
+				<div id="jspec"></div>
+			</div>
+		</div>
+		<div class="doc-btm">
+			&copy; 2010, Stefan Lidén
+		</div>
+	</body>
+</html>
