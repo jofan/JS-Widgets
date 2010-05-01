@@ -1,24 +1,16 @@
-﻿<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
 	<head>
+		<title>Modular JS: Calendar widget</title>
 		<link type="text/css" rel="stylesheet" href="support/jspec.css" />
 		<link type="text/css" rel="stylesheet" href="../lib/calendar.css" />
 		<script src="support/jspec.js"></script>
 		<script src="support/jspec.xhr.js"></script>
 		<script src="support/jquery-1.4.2.js"></script>
 		<script src="support/jspec.jquery.js"></script>
-		<script src="../lib/core.js"></script>
-		<script src="../lib/calendar.js"></script>
-		<script src="unit/spec.helper.js"></script>
-		<script>
-			function runSuites() {
-				JSpec
-				.exec('unit/spec_calendar.js')
-				.run({ fixturePath: 'fixtures' })
-				.report()
-			}
-		</script>
 	</head>
-	<body class="jspec" onLoad="runSuites();">
+	<body class="jspec">
+		<input type="hidden" id="pageName" value="calendar" />
 		<div class="doc-top">
 			<h1>Widget: Calendar</h1>
 		</div>
@@ -62,5 +54,12 @@
 		<div class="doc-btm">
 			&copy; 2010, Stefan Lidén
 		</div>
+		<script src="../lib/core.js"></script>
+		<script src="../lib/messages.js"></script>
+		<script src="../lib/templates.js"></script>
+		<script src="../lib/bus.js"></script>
+		<script src="../lib/test.js"></script>
+		<script src="../lib/calendar.js"></script>
+		<script src="../lib/config.js"></script>
 	</body>
 </html>

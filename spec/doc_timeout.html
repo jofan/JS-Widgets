@@ -1,24 +1,15 @@
-﻿<html>
+<html>
 	<head>
+		<title>Modular JS: Timeout widget</title>
 		<link type="text/css" rel="stylesheet" href="support/jspec.css" />
 		<link type="text/css" rel="stylesheet" href="../lib/timeout.css" />
 		<script src="support/jspec.js"></script>
 		<script src="support/jspec.xhr.js"></script>
 		<script src="support/jquery-1.4.2.js"></script>
 		<script src="support/jspec.jquery.js"></script>
-		<script src="../lib/core.js"></script>
-		<script src="../lib/timeout.js"></script>
-		<script src="unit/spec.helper.js"></script>
-		<script>
-			function runSuites() {
-				JSpec
-				.exec('unit/spec_timeout.js')
-				.run({ fixturePath: 'fixtures' })
-				.report()
-			}
-		</script>
 	</head>
-	<body class="jspec" onLoad="runSuites();">
+	<body class="jspec">
+		<input type="hidden" id="pageName" value="timeout" />
 		<div class="doc-top">
 			<h1>Widget: Timeout</h1>
 		</div>
@@ -57,5 +48,12 @@
 		<div class="doc-btm">
 			&copy; 2010, Stefan Lidén
 		</div>
+		<script src="../lib/core.js"></script>
+		<script src="../lib/messages.js"></script>
+		<script src="../lib/templates.js"></script>
+		<script src="../lib/bus.js"></script>
+		<script src="../lib/test.js"></script>
+		<script src="../lib/timeout.js"></script>
+		<script src="../lib/config.js"></script>
 	</body>
 </html>

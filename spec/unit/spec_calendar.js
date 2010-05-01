@@ -10,16 +10,8 @@ describe 'App.widget.Calendar'
   end
   
   describe 'Create instance "Cal"'
-    it 'should give us access to .today[year, month, day, date]' 
-      var thisDate = new Date()
-      var thisYear = thisDate.getFullYear()
-      var thisMonth = thisDate.getMonth()
-      var thisDay = thisDate.getDay()
-      var thisDate = thisDate.getDate() 
-      Cal.today.year.should.equal thisYear
-      Cal.today.month.should.equal thisMonth
-      Cal.today.day.should.equal thisDay
-      Cal.today.date.should.equal thisDate
+    it 'should have App.widget.Calendar as constructor' 
+      Cal.constructor.should.be App.widget.Calendar
     end
     
     it 'should have a property "calendar" that refers to div.calendar object'
